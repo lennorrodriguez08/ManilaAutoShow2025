@@ -1,0 +1,32 @@
+// LINE HEIGHT
+$default-line-height: 1.5;
+
+// FONT 
+$font-family: Helvetica, Arial, sans-serif;
+$default-text-size: 16px;
+
+// DEFAULT
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $default-text-size;
+    line-height: $default-line-height;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

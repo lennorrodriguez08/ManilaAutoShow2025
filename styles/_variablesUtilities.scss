@@ -1,0 +1,100 @@
+// BREAKPOINTS
+$media-mobile: 500px;
+$media-tablet: 768px;
+$media-desktop: 1100px;
+
+// MARGINS PADDINGS
+$padding-sm-xy: 10px;
+$padding-md-xy: 20px;
+$padding-lg-xy: 30px;
+
+$padding-sm-x: 0 10px;
+$padding-md-x: 0 20px;
+$padding-lg-x: 0 30px;
+
+$padding-sm-y: 10px 0;
+$padding-md-y: 20px 0;
+$padding-lg-y: 30px 0;
+
+$margin-sm-xy: 10px;
+$margin-md-xy: 20px;
+$margin-lg-xy: 30px;
+
+$margin-sm-x: 0 10px;
+$margin-md-x: 0 20px;
+$margin-lg-x: 0 30px;
+
+$margin-sm-y: 10px 0;
+$margin-md-y: 20px 0;
+$margin-lg-y: 30px 0;
+
+// DEFAULT MAX WIDTH
+$default-mx-width: 1100px;
+
+// THEME COLORS
+$main-color: #EEB211;
+$secondary-color: #333333;
+$white-text: #FFFFFF;
+$active-button-color: #80182E;
+
+// CLASSES
+.active {
+    background-color: $active-button-color!important;
+}
+
+.custom-h1 {
+    font-size: 42px;
+}
+
+.custom-h2 {
+    font-size: 30px;
+}
+
+.intro-text {
+    font-size: 18px;
+    padding: 0 0 15px;
+}
+
+.cta-btn {
+    font-size: 18px;
+    display: block;
+    background-color: $main-color;
+    padding: 12px 26px;
+    color: $white-text;
+    align-self: flex-start;
+    border-left: 5px solid $active-button-color;
+    transition: 0.5s ease;
+
+    &:hover {
+        background: $active-button-color;
+        border-left: 5px solid $main-color;
+    }
+}
+
+// HR OR DIVIDER
+.divider {
+    width: 60%;
+    padding: 0 20px;
+    margin: 10px 0;
+    background-color: $main-color;
+    height: 1px;
+    border: none;
+}
+
+// CARD FADE FOR GALLERY
+.card-fade {
+    transition: 0.6s ease;
+    opacity: 0.85;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+// MODAL TEXT STYLE
+.modal-desc-style {
+    color: $active-button-color;
+    font-weight: bold;
+    padding-right: 5px;
+}

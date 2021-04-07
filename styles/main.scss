@@ -123,7 +123,7 @@ header {
             p {
                 text-align: center;
                 padding: 20px 0 0;
-                font-size: 18px;
+                font-size: 16px;
             }
 
             h2 {
@@ -291,7 +291,7 @@ header {
 
 // 768PX
 @media (max-width: $media-tablet) {
-    // NAVIGATION
+    // NAVIGATION TABLET MOBILE
     .nav-main-container {
         .nav-sub-container {
             .nav-items {
@@ -308,7 +308,7 @@ header {
     
     }
 
-    // HOMEPAGE TOP SECTION 2 GALLERY DESKTOP
+    // HOMEPAGE TOP SECTION 2 GALLERY TABLET MOBILE
     .top-section-2 {
         margin: 60px 5px; 
 
@@ -317,6 +317,52 @@ header {
             grid-gap: 5px;         
         }
     }
+
+    // ORGANIZATION STARTERS HOMEPAGE SECTION TABLET MOBILE
+.org-starters {
+    max-width: $default-mx-width;
+    margin: 80px auto;
+    padding: 25px 20px;
+
+    &-container {
+        padding-top: 40px;
+
+        .person {
+            display: flex;
+            align-items: center;
+            padding: $padding-sm-y;
+            gap: 15px;
+            flex-wrap: wrap; //
+            justify-content: center; //
+            text-align: center; //
+
+            &-description {
+                font-style: italic;
+
+                .title {
+                    font-weight: bold;
+                }
+                
+            }
+        }
+        
+        .person-headshot {
+
+            
+            img {
+                width: 150px;
+                display: block;
+                border-radius: 50%;
+                border: 3px solid rgba(238, 178, 17, 0.6);
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        color: $active-button-color;
+    }
+}
 }
 
 

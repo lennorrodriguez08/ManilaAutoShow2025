@@ -63,7 +63,7 @@ ul {
 .divider {
   width: 60%;
   padding: 0 20px;
-  margin: 10px 0;
+  margin: 10px auto;
   background-color: #EEB211;
   height: 1px;
   border: none;
@@ -210,7 +210,7 @@ header .header-sub-container {
 .top-section-1 {
   max-width: 1100px;
   padding: 20px;
-  margin: 60px auto;
+  margin: 80px auto;
   color: #333333;
 }
 
@@ -253,7 +253,7 @@ header .header-sub-container {
 }
 
 .top-section-2 {
-  margin: 60px 10px;
+  margin: 80px 10px;
 }
 
 .top-section-2-container {
@@ -332,6 +332,47 @@ header .header-sub-container {
   font-size: 14px;
   -webkit-box-shadow: 1px 1px 5px;
           box-shadow: 1px 1px 5px;
+}
+
+.org-starters {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 25px 20px;
+}
+
+.org-starters-container {
+  padding-top: 40px;
+}
+
+.org-starters-container .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  gap: 15px;
+}
+
+.org-starters-container .person-description {
+  font-style: italic;
+}
+
+.org-starters-container .person-description .title {
+  font-weight: bold;
+}
+
+.org-starters-container .person-headshot img {
+  width: 150px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid rgba(238, 178, 17, 0.6);
+}
+
+.org-starters h2 {
+  text-align: center;
+  color: #80182E;
 }
 
 @media (max-width: 768px) {

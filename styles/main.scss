@@ -74,6 +74,7 @@ main {
 
 header {
     background-image: url("../img/show_hero_image_banner_1.jpg");
+    background-attachment: fixed;
     height: calc(100vh - 87px);
     background-repeat: no-repeat;
     width: 100%;
@@ -319,50 +320,17 @@ header {
     }
 
     // ORGANIZATION STARTERS HOMEPAGE SECTION TABLET MOBILE
-.org-starters {
-    max-width: $default-mx-width;
-    margin: 80px auto;
-    padding: 25px 20px;
+    .org-starters {
 
-    &-container {
-        padding-top: 40px;
+        &-container {
 
-        .person {
-            display: flex;
-            align-items: center;
-            padding: $padding-sm-y;
-            gap: 15px;
-            flex-wrap: wrap; //
-            justify-content: center; //
-            text-align: center; //
-
-            &-description {
-                font-style: italic;
-
-                .title {
-                    font-weight: bold;
-                }
-                
-            }
-        }
-        
-        .person-headshot {
-
-            
-            img {
-                width: 150px;
-                display: block;
-                border-radius: 50%;
-                border: 3px solid rgba(238, 178, 17, 0.6);
+            .person {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
             }
         }
     }
-
-    h2 {
-        text-align: center;
-        color: $active-button-color;
-    }
-}
 }
 
 

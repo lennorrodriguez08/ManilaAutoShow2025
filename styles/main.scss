@@ -82,7 +82,7 @@ header {
     background-size: cover;
     position: relative;
     z-index: 1;
-
+    
     &::before {
         content: "";
         position: absolute;
@@ -262,6 +262,50 @@ header {
     }
 }
 
+// PACKAGES SECTION HOMEPAGE DESKTOP
+.package {
+    max-width: $default-mx-width;
+    margin: 80px auto;
+
+    h2 {
+        text-align: center;
+        color: $active-button-color;
+        padding: 10px 20px 5px;
+    }
+
+    &-container {
+        padding: 70px 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 30px 15px;
+    }
+
+    &-item {
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+
+        img {
+            width: 100%;
+            display: block;
+            max-height: 300px;
+        }
+    }
+
+    &-description {
+        padding: $padding-sm-xy;
+        text-align: center;
+
+        .title {
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+    }
+}
+
 
 
 
@@ -333,26 +377,17 @@ header {
     }
 }
 
+// 500PX MOBILE
+@media (max-width: 500px) {
+    // PACKAGES SECTION HOMEPAGE MOBILE
+    .package {
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
+        &-container {
+            grid-template-columns: 1fr;
+            grid-gap: 15px 15px;
+        }
+    }
+}
 
 // ANIMATIONS
 @keyframes steeringWheel {

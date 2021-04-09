@@ -265,7 +265,7 @@ header {
 // PACKAGES SECTION HOMEPAGE DESKTOP
 .package {
     max-width: $default-mx-width;
-    margin: 80px auto;
+    margin: 80px auto 100px;
 
     h2 {
         text-align: center;
@@ -306,33 +306,88 @@ header {
     }
 }
 
+// FOOTER DESKTOP
+.footer {
+    background-color: $main-color;
+    margin-top: 40px;
+    color: $white-text;
 
+    &-container {
+        max-width: $default-mx-width;
+        margin: auto;
+        padding: 30px 20px;
+    }
 
+    &-logo-text {
+        padding-bottom: 25px;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.4;
 
+        img {
+            display: block;
+        }
+    }
 
+    &-sub-container {
+        display: flex;
+        justify-content: space-between;
 
+        a {
+            color: $white-text;
+            transition: 0.5s ease;
 
+            &:hover {
+                color: $active-button-color;
+                text-decoration: underline;
+            }
+        }
 
+        .social-links {
+            display: flex;
 
+           a {
+               font-size: 20px;
+               background: $active-button-color;
+               margin-left: 5px;
+               width: 40px;
+               height: 40px;
+               text-align: center;
+               border-radius: 50%;
+               padding-top: 5px;
+               display: block;
+               transition: 0.5s ease;
 
+               &:hover {
+                   background-color: $white-text;
+               }
+           }
+            
+        }
 
+        .title {
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            padding-bottom: 10px;
+        }
+    }
+}
 
+// END FOOTER DESKTOP
+.end-footer {
+    background: $active-button-color;
+    color: $white-text;
 
+    &-container {
+        max-width: $default-mx-width;
+        margin: auto;
+        padding: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        p {
+            font-size: 14px;
+        }
+    }
+}
 
 // 768PX
 @media (max-width: $media-tablet) {
@@ -371,6 +426,43 @@ header {
             .person {
                 flex-wrap: wrap;
                 justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    // FOOTER MOBILE
+    .footer {
+
+        &-container {
+            padding: 30px 20px 10px;
+        }
+
+        &-logo-text {
+            text-align: center;
+
+            img {
+                margin: auto;
+            }
+        }
+
+        &-sub-container {
+            align-items: center;
+            flex-direction: column;
+            text-align: center; 
+
+            .footer-links {
+                padding-bottom: 20px; 
+            }
+        }
+    }
+
+    // END FOOTER DESKTOP
+    .end-footer {
+
+        &-container {
+
+            p {
                 text-align: center;
             }
         }

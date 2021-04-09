@@ -378,7 +378,7 @@ header .header-sub-container {
 
 .package {
   max-width: 1100px;
-  margin: 80px auto;
+  margin: 80px auto 100px;
 }
 
 .package h2 {
@@ -424,6 +424,94 @@ header .header-sub-container {
   font-size: 14px;
 }
 
+.footer {
+  background-color: #EEB211;
+  margin-top: 40px;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.footer-logo-text {
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.footer-logo-text img {
+  display: block;
+}
+
+.footer-sub-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-sub-container a {
+  color: #FFFFFF;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.footer-sub-container a:hover {
+  color: #80182E;
+  text-decoration: underline;
+}
+
+.footer-sub-container .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-sub-container .social-links a {
+  font-size: 20px;
+  background: #80182E;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.footer-sub-container .social-links a:hover {
+  background-color: #FFFFFF;
+}
+
+.footer-sub-container .title {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+}
+
+.end-footer {
+  background: #80182E;
+  color: #FFFFFF;
+}
+
+.end-footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.end-footer-container p {
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   .nav-main-container .nav-sub-container .nav-items {
     position: absolute;
@@ -452,6 +540,31 @@ header .header-sub-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+  }
+  .footer-container {
+    padding: 30px 20px 10px;
+  }
+  .footer-logo-text {
+    text-align: center;
+  }
+  .footer-logo-text img {
+    margin: auto;
+  }
+  .footer-sub-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-sub-container .footer-links {
+    padding-bottom: 20px;
+  }
+  .end-footer-container p {
     text-align: center;
   }
 }

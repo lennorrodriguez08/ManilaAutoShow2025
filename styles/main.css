@@ -44,7 +44,7 @@ ul {
 
 .cta-btn {
   font-size: 18px;
-  display: block;
+  display: inline-block;
   background-color: #EEB211;
   padding: 12px 26px;
   color: #FFFFFF;
@@ -512,6 +512,115 @@ header .header-sub-container {
   font-size: 14px;
 }
 
+.half-header {
+  background-image: url("../img/sponsors/sponsors_banner.jpg");
+  background-attachment: fixed;
+  height: 50vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.half-header::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.half-header .header-sub-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.sponsor {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.sponsor-container h2 {
+  color: #80182E;
+  padding-bottom: 40px;
+}
+
+.sponsor-container ul {
+  text-indent: 20px;
+  padding-bottom: 20px;
+}
+
+.sponsor-container ul li {
+  padding-bottom: 5px;
+}
+
+.sponsor-container ul i {
+  color: #80182E;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.sponsor-intro {
+  max-width: 1100px;
+  padding: 20px;
+  margin: 80px auto;
+}
+
+.sponsor-intro-container h2 {
+  color: #80182E;
+}
+
+.sponsor-intro-container .sponsor-headshots {
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.sponsor-intro-container .sponsor-headshots img {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #EEB211;
+  margin: auto;
+}
+
+.sponsor-intro-container .sponsor-headshots .sponsor-name {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 0;
+  font-style: italic;
+}
+
+.sponsor-intro-container .sponsor-headshots .sponsor-desc {
+  font-style: italic;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .nav-main-container .nav-sub-container .nav-items {
     position: absolute;
@@ -567,6 +676,19 @@ header .header-sub-container {
   .end-footer-container p {
     text-align: center;
   }
+  .sponsor-container h2 {
+    text-align: center;
+  }
+  .sponsor-container ul {
+    text-indent: 0;
+  }
+  .sponsor-intro-container h2 {
+    text-align: center;
+  }
+  .sponsor-intro-container .sponsor-headshots {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -574,6 +696,10 @@ header .header-sub-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 15px 15px;
+  }
+  .sponsor-intro-container .sponsor-headshots {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 

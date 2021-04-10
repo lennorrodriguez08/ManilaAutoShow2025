@@ -389,6 +389,136 @@ header {
     }
 }
 
+// SPONSOR HEADER HERO IMAGE DESKTOP
+
+.half-header {
+    background-image: url("../img/sponsors/sponsors_banner.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .header-sub-container {
+        max-width: $default-mx-width;
+        margin: 0 auto;
+        padding: 10px 15px;
+        color: $white-text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+// SPONSOR TOP SECTION
+.sponsor {
+    max-width: $default-mx-width;
+    margin: 80px auto;
+    padding: $padding-md-xy;
+
+    &-container {
+
+        h2 {
+            color: $active-button-color;
+            padding-bottom: 40px;
+        }
+
+        ul {
+            text-indent: 20px;
+            padding-bottom: 20px;
+
+            li {
+                padding-bottom: 5px;
+            }
+
+            i {
+                color: $active-button-color;
+                font-size: 20px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+// SPONSOR HEADHOTS
+.sponsor-intro {
+    max-width: $default-mx-width;
+    padding: $padding-md-xy;
+    margin: 80px auto;
+
+    &-container {
+        
+        h2 {
+            color: $active-button-color;
+        }
+
+        .sponsor-headshots {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 25px;
+
+            img {
+                max-width: 100%;
+                display: block;
+                border-radius: 50%;
+                border: 3px solid $main-color;
+                margin: auto;
+            }
+
+            .sponsor-name {
+                font-weight: bold;
+                text-align: center;
+                padding: 10px 0 0;
+                font-style: italic;
+            }
+
+            .sponsor-desc {
+                font-style: italic;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 768PX
 @media (max-width: $media-tablet) {
     // NAVIGATION TABLET MOBILE
@@ -467,6 +597,36 @@ header {
             }
         }
     }
+
+    // SPONSOR TOP SECTION
+    .sponsor {
+
+        &-container {
+
+            h2 {
+                text-align: center;
+            }
+
+            ul {
+                text-indent: 0;
+            }
+        }
+    }
+
+    // SPONSOR HEADHOTS
+    .sponsor-intro {
+
+        &-container {
+            
+            h2 {
+                text-align: center;
+            }
+
+            .sponsor-headshots {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
 }
 
 // 500PX MOBILE
@@ -477,6 +637,17 @@ header {
         &-container {
             grid-template-columns: 1fr;
             grid-gap: 15px 15px;
+        }
+    }
+
+    // SPONSOR HEADHOTS
+    .sponsor-intro {
+
+        &-container {
+
+            .sponsor-headshots {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }

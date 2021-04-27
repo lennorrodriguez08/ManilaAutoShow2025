@@ -525,12 +525,12 @@ header .header-sub-container {
 
 .half-header, .about-header {
   background-image: url("../img/sponsors/sponsors_banner.jpg");
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   height: 50vh;
   background-repeat: no-repeat;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  background-position: center !important;
+  background-size: cover !important;
   position: relative;
   z-index: 1;
 }
@@ -760,6 +760,10 @@ header .header-sub-container {
 
 .show-location-container .item-1 a:hover {
   color: #80182E;
+}
+
+.subscribe-header {
+  background: url("../img/subscribe/subscribe_banner.jpg");
 }
 
 @media (max-width: 768px) {

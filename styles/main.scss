@@ -73,7 +73,7 @@ main {
 // HOMEPAGE HEADER HERO IMAGE DESKTOP
 
 header {
-    background-image: url("../img/show_hero_image_banner_1.jpg");
+    background-image: url("../img/index/show_hero_image_banner_1.jpg");
     background-attachment: fixed;
     height: calc(100vh - 87px);
     background-repeat: no-repeat;
@@ -441,7 +441,7 @@ header {
 // SPONSOR TOP SECTION
 .sponsor {
     max-width: $default-mx-width;
-    margin: 80px auto;
+    margin: 80px auto 50px;
     padding: $padding-md-xy;
 
     &-container {
@@ -472,7 +472,7 @@ header {
 .sponsor-intro {
     max-width: $default-mx-width;
     padding: $padding-md-xy;
-    margin: 80px auto;
+    margin: 50px auto 80px;
 
     &-container {
         
@@ -651,6 +651,105 @@ header {
     background: url("../img/subscribe/subscribe_banner.jpg");
 }
 
+.subscribe-section {
+    max-width: $default-mx-width;
+    margin: 80px auto;
+    background-color: $active-button-color;
+    padding: 20px;
+    border-radius: 5px;
+
+    &-container {
+
+        h2, p {
+            color: $white-text;
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+
+            input {
+                display: block;
+                border: none;
+                padding: 10px;
+                font-size: 18px;
+                font-family: Arial, Helvetica;
+
+                &[type="email"] {
+                    width: 80%;
+                }
+
+                &[type="submit"] {
+                    width: 20%;
+                    background: $main-color;
+                    color: $white-text;
+                    font-size: 16px;
+
+                    &:hover {
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SUBSCRIBE PAGE BLOG SECTION
+.our-blogs {
+    max-width: $default-mx-width;
+    margin: 80px auto;
+    padding: $padding-md-xy;
+
+    .custom-h2 {
+        color: $active-button-color;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        .blog {
+            box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+
+            .for-text {
+                padding: $padding-sm-xy;
+                text-align: justify;
+
+                h3 {
+                    text-align: center;
+                    padding: 10px 0;
+                }
+
+                .cta-btn {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                    background: $active-button-color;
+                    border-color: $main-color;
+
+                    &:hover {
+                        background: $main-color;
+                        border-color: $active-button-color;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 
 
 
@@ -789,6 +888,14 @@ header {
             align-items: center; 
         }
     }
+
+    // SUBSCRIBE PAGE BLOG SECTION
+    .our-blogs {
+
+        &-container {
+            grid-template-columns: 1fr 1fr
+        }
+    }
 }
 
 // 500PX MOBILE
@@ -898,6 +1005,43 @@ header {
                 }
             }
             
+        }
+    }
+
+    // SUBSCRIBE PAGE
+    .subscribe-section {
+
+        &-container {
+            
+            form {
+
+                input {
+
+                    &[type="email"] {
+                        width: 60%; //
+                    }
+
+                    &[type="submit"] {
+                        width: 40%; //
+                    }
+                }
+            }
+        }
+    }
+
+    // SUBSCRIBE PAGE BLOG SECTION
+    .our-blogs {
+        padding: $padding-sm-xy;
+
+        &-container {
+            grid-template-columns: 1fr; 
+
+            .blog {
+
+                img {
+                    width: 100%; 
+                }
+            }
         }
     }
 }
